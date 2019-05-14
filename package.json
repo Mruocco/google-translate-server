@@ -16,7 +16,7 @@
     "request-promise": "^4.1.1"
   },
   "config": {
-    "port": 9333
+    "port": 80
   },
   "description": "GT4",
   "devDependencies": {

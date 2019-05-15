@@ -71,7 +71,7 @@ describe('TTS tests', () => {
 	})
 });
 
-const serverBaseDomain = 'http://localhost:9333';	//	TODO: from topology
+const serverBaseDomain = 'http://localhost:80';	//	TODO: from topology
 
 function loadMainPage() {
 	return axios.get(serverBaseDomain + '/').then((response) => response.data);
@@ -95,4 +95,3 @@ function translate(translateQuery) {
 function getLanguages() {
 	return axios.get(serverBaseDomain + '/api/languages').then((response) => response.data);
 }
-

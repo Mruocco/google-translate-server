@@ -4,7 +4,7 @@ var q = require('q');
 var tkkScraper = function () {
 	//return '409846.1881405758';
 	var topology = require('./topology-manager').readTopology();
-	
+
 	var	pageUrl = topology.externalApis.googleTranslateWebpage;
 	var sitepage;
 
@@ -23,7 +23,7 @@ var tkkScraper = function () {
 	    	} else {
 				return q.reject(status);
 	    	}
-	        
+
 	    })
 	    .then(tkk => {
 	        sitepage.close();
